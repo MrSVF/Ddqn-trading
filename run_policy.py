@@ -197,24 +197,3 @@ plt.plot(eq1)   # График эквити
 # plt.plot(eq2)   # График эквити
 plt.xlabel('Сделок: {0}, L: {1}, S: {2}, Max_dd: {3:.2f}'.format(n_long+n_short, n_long, n_short, max_dd))
 plt.show()      # Показать окно графика
-
-# plt.plot(pd.Series(eq1)-pd.Series([0]+list(eq1[:-1])))
-# plt.show()
-
-
-# Торговый код от Никитина:
-# if predictions[j].argmax() ==0:
-#             if e1.qty<=0:
-#                 n_long += 1
-#                 e1.add( trd_price=closingPrice+10, trd_qty=-e1.qty +1  )  # покупаем опен  e1.qty==0
-#         if predictions[j].argmax() ==1:
-#             if e1.qty>=0:
-#                 n_short += 1
-#                 e1.add( trd_price=closingPrice-10, trd_qty=-e1.qty -1  )  # продаем опен  e1.qty==0
-                
-#         if (closingPrice - e1.price)*e1.qty>=1000000:     # если  прибыль больше чем
-#                 #n_short += 1
-#                 e1.add( trd_price=closingPrice, trd_qty=-e1.qty  )  # кроем позу
-    
-#         eq1.append( [e1.e_val] )
-#         eq2.append( e1.e_val+(closingPrice - e1.price)*e1.qty )
