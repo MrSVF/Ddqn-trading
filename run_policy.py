@@ -125,8 +125,6 @@ for i in range(1, lendf-window_size + 1):   # Начало со второй с�
         elif position == SHORT:     # Если предыдущая позиция шорт
             position = FLAT         # Меняем позицию на флет
             exit_price = closingPrice                   # Запоминаем цену покупки
-            # reward = entry_price - exit_price
-            # rewards.append(reward)
             e1.add(trd_price=closingPrice, trd_qty= -e1.qty )    # # Закрываем позицию  в emodule
             # eq1.append(e1.e_val)                                # Запоминаем объём в emodule
 
@@ -145,8 +143,6 @@ for i in range(1, lendf-window_size + 1):   # Начало со второй с�
         elif position == LONG:      # Если предыдущая позиция лонг
             position = FLAT
             exit_price = closingPrice                   # Запоминаем цену продажи
-            # reward = exit_price - entry_price
-            # rewards.append(reward)
             e1.add(trd_price=closingPrice, trd_qty= -e1.qty )    # Закрываем позицию в emodule
             # eq1.append(e1.e_val)                                # Запоминаем объём в emodule
 
