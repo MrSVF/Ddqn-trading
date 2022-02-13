@@ -1,5 +1,6 @@
 # Ddqn-trading
-Ddqn based robot for MOEX trade. Work-in-Progress .........
+Ddqn based robot for MOEX trade. Work-in-Progress ...
+More code coming soon!
 
 Technology:
 
